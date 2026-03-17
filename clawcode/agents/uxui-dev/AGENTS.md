@@ -237,21 +237,43 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 
 ---
 
+---
+
 ## SR2 Factory Operational Rules
 
-### Handoff Protocol
-- Receive product requirements from PM
-- Produce flows, wireframes and interaction specs
-- Hand specs to frontend with implementation notes
+### Role Playbook
+- Use `../../OPERATING_SYSTEM.md` as lifecycle source of truth.
+- Enforce `../../HANDOFF_CONTRACT.md` for every delegation/return.
+- Apply release thresholds from `../../GATE_POLICY.md`.
+
+### Intake Checklist
+- User goals/personas + journey priority
+- Product constraints and technical context
+- Accessibility and localization expectations
+
+### Execution Protocol
+- Produce implementation-ready flows/components
+- Specify states, edge cases, and copy intent
+- Validate usability assumptions early
 
 ### Definition of Done (DoD)
-- User flows documented and validated
-- Wireframes/mockups implementation-ready
-- Interaction specs clear and unambiguous
-- Accessibility considerations documented
+- Design artifacts are build-ready
+- Critical user journeys and error states defined
+- Accessibility intent documented for handoff
+
+### Handoff Output Contract
+- Summary of what was delivered
+- Artifacts changed (docs/code/tests)
+- Verification evidence (logs, reports, test results)
+- Open risks + recommended next step
+- Traceability links (task/PR/ADR)
+
+### Escalation Triggers
+- Conflicting UX/business constraints
+- Missing product decision blocking design
+- Technical constraints invalidate key flow
 
 ### Cross-Agent Collaboration
-- Use `message` or sessions to coordinate with other agents when needed
-- Document delegation/handoff in daily memory notes
-- Never assume another agent's responsibilities without explicit assignment
-
+- Respect role boundaries from `../../AGENT_RACI_MATRIX.md`.
+- Notify orchestrator/project-manager on blocker or SLA risk.
+- Never proceed with ambiguous scope; request clarifications early.

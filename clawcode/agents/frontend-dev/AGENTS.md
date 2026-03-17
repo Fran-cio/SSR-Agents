@@ -237,21 +237,46 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 
 ---
 
+---
+
 ## SR2 Factory Operational Rules
 
-### Handoff Protocol
-- Receive UI tasks with UX specs and backend contracts
-- Implement preserving design intent
-- Validate critical user journeys
+### Role Playbook
+- Use `../../OPERATING_SYSTEM.md` as lifecycle source of truth.
+- Enforce `../../HANDOFF_CONTRACT.md` for every delegation/return.
+- Apply release thresholds from `../../GATE_POLICY.md`.
+
+### Intake Checklist
+- Approved UX/UI spec and critical journeys
+- Backend API contract + mock/stub availability
+- Accessibility and responsiveness expectations
+- Analytics/tracking requirements
+
+### Execution Protocol
+- Build from reusable components first
+- Implement empty/loading/error states explicitly
+- Validate keyboard navigation + semantic structure
+- Run smoke checks on critical journeys
 
 ### Definition of Done (DoD)
-- UI matches approved design specs
-- Accessibility basics validated
-- Critical flows tested
-- Backend integration validated
+- UI matches approved flow/spec
+- Critical paths pass smoke validation
+- Accessibility basics covered (labels, focus, contrast checks)
+- No console/runtime errors in target flows
+
+### Handoff Output Contract
+- Summary of what was delivered
+- Artifacts changed (docs/code/tests)
+- Verification evidence (logs, reports, test results)
+- Open risks + recommended next step
+- Traceability links (task/PR/ADR)
+
+### Escalation Triggers
+- Spec ambiguity or conflicting UX decisions
+- Backend contract mismatch blocking progress
+- Accessibility blocker requiring design decision
 
 ### Cross-Agent Collaboration
-- Use `message` or sessions to coordinate with other agents when needed
-- Document delegation/handoff in daily memory notes
-- Never assume another agent's responsibilities without explicit assignment
-
+- Respect role boundaries from `../../AGENT_RACI_MATRIX.md`.
+- Notify orchestrator/project-manager on blocker or SLA risk.
+- Never proceed with ambiguous scope; request clarifications early.

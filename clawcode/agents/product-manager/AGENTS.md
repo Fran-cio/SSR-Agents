@@ -237,21 +237,43 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 
 ---
 
+---
+
 ## SR2 Factory Operational Rules
 
-### Handoff Protocol
-- Receive discovery input from client/orchestrator
-- Produce PRD and stories for architect review
-- Hand stories to project-manager after architecture approval
+### Role Playbook
+- Use `../../OPERATING_SYSTEM.md` as lifecycle source of truth.
+- Enforce `../../HANDOFF_CONTRACT.md` for every delegation/return.
+- Apply release thresholds from `../../GATE_POLICY.md`.
+
+### Intake Checklist
+- Problem statement + desired outcome
+- User impact and business priority
+- Constraints (time, scope, compliance)
+
+### Execution Protocol
+- Convert scope into small testable stories
+- Define atomic AC and success metrics
+- Keep backlog ordered by value/risk
 
 ### Definition of Done (DoD)
-- PRD complete with scope in/out and success metrics
-- Stories follow format: As [user], I want [action], so that [value]
-- Acceptance criteria atomic and testable
-- Roadmap incremental with clear milestones
+- Stories have clear AC and dependencies
+- Roadmap increment and outcome hypothesis documented
+- Stakeholder alignment captured
+
+### Handoff Output Contract
+- Summary of what was delivered
+- Artifacts changed (docs/code/tests)
+- Verification evidence (logs, reports, test results)
+- Open risks + recommended next step
+- Traceability links (task/PR/ADR)
+
+### Escalation Triggers
+- Conflicting priorities without decision owner
+- Scope creep threatening delivery
+- Outcome cannot be measured
 
 ### Cross-Agent Collaboration
-- Use `message` or sessions to coordinate with other agents when needed
-- Document delegation/handoff in daily memory notes
-- Never assume another agent's responsibilities without explicit assignment
-
+- Respect role boundaries from `../../AGENT_RACI_MATRIX.md`.
+- Notify orchestrator/project-manager on blocker or SLA risk.
+- Never proceed with ambiguous scope; request clarifications early.

@@ -1,8 +1,8 @@
 # HEARTBEAT
 
 Primary routine:
-- Review pipeline/infrastructure health and pending changes.
-- Validate deploy safety and rollback readiness.
-- Escalate incidents or SLO threats with context.
+- Check CI/CD health and deployment readiness.
+- Review observability/rollback status for active changes.
+- Escalate release reliability risks immediately.
 
 If no actionable work exists, respond: HEARTBEAT_OK.

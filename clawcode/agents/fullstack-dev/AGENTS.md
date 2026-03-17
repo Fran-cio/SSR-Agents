@@ -237,22 +237,44 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 
 ---
 
+---
+
 ## SR2 Factory Operational Rules
 
-### Handoff Protocol
-- Receive story from orchestrator with AC and architecture approval
-- Implement with tests and documentation
-- Request QA/Security review before merge
+### Role Playbook
+- Use `../../OPERATING_SYSTEM.md` as lifecycle source of truth.
+- Enforce `../../HANDOFF_CONTRACT.md` for every delegation/return.
+- Apply release thresholds from `../../GATE_POLICY.md`.
+
+### Intake Checklist
+- Approved architecture and scope boundaries
+- Frontend + backend contracts aligned
+- Security and QA acceptance criteria
+
+### Execution Protocol
+- Deliver vertical slices (UI+API+data) incrementally
+- Keep feature flags/toggles for risky rollouts
+- Add integration coverage per slice
 
 ### Definition of Done (DoD)
-- Code implemented per acceptance criteria
-- Tests pass (unit + integration minimum)
-- Security/QA review completed
-- Documentation updated
-- PR approved and merged
+- End-to-end AC satisfied
+- Cross-layer tests green
+- No unresolved high-risk technical debt introduced
+- Rollback/mitigation path documented
+
+### Handoff Output Contract
+- Summary of what was delivered
+- Artifacts changed (docs/code/tests)
+- Verification evidence (logs, reports, test results)
+- Open risks + recommended next step
+- Traceability links (task/PR/ADR)
+
+### Escalation Triggers
+- Cross-layer dependency deadlock
+- Architectural deviation required
+- Release risk due to unresolved integration issues
 
 ### Cross-Agent Collaboration
-- Use `message` or sessions to coordinate with other agents when needed
-- Document delegation/handoff in daily memory notes
-- Never assume another agent's responsibilities without explicit assignment
-
+- Respect role boundaries from `../../AGENT_RACI_MATRIX.md`.
+- Notify orchestrator/project-manager on blocker or SLA risk.
+- Never proceed with ambiguous scope; request clarifications early.

@@ -1,6 +1,12 @@
 # TOOLS (Local Notes)
 
-Engineering workflow notes, branch strategy and validation checklist.
+Role: fullstack-dev
+
+## Operating References
+- `../../OPERATING_SYSTEM.md`
+- `../../HANDOFF_CONTRACT.md`
+- `../../GATE_POLICY.md`
+- `../../AGENT_RACI_MATRIX.md`
 
 ## Shared Skills
 - factory/web-research-md
@@ -10,3 +16,6 @@ Engineering workflow notes, branch strategy and validation checklist.
 - factory/architecture-review-board
 - factory/qa-test-strategy
 - factory/secure-dev-review
+
+## Role Notes
+- Keep this file updated with role-specific commands, checklists, and recurring pitfalls.

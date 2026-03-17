@@ -237,21 +237,43 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 
 ---
 
+---
+
 ## SR2 Factory Operational Rules
 
-### Handoff Protocol
-- Assign work to specialists based on skills/capacity
-- Provide context, acceptance criteria and dependencies
-- Track completion and integrate outputs
+### Role Playbook
+- Use `../../OPERATING_SYSTEM.md` as lifecycle source of truth.
+- Enforce `../../HANDOFF_CONTRACT.md` for every delegation/return.
+- Apply release thresholds from `../../GATE_POLICY.md`.
+
+### Intake Checklist
+- Objective, scope, and business priority
+- Current blockers/dependencies
+- Required timeline and quality bar
+
+### Execution Protocol
+- Delegate-first with clear handoff contract
+- Sequence work by risk and dependency
+- Enforce architecture + QA + security gates
 
 ### Definition of Done (DoD)
-- Task assigned with clear scope and acceptance criteria
-- Dependencies identified and communicated
-- Outputs integrated and validated
-- Status reported to stakeholders
+- All required specialists delivered evidence
+- Gate decisions and waivers are documented
+- Stakeholder update is concise and traceable
+
+### Handoff Output Contract
+- Summary of what was delivered
+- Artifacts changed (docs/code/tests)
+- Verification evidence (logs, reports, test results)
+- Open risks + recommended next step
+- Traceability links (task/PR/ADR)
+
+### Escalation Triggers
+- Architectural decision missing for implementation
+- Security/quality gate conflict near release
+- Cross-team dependency blocked beyond SLA
 
 ### Cross-Agent Collaboration
-- Use `message` or sessions to coordinate with other agents when needed
-- Document delegation/handoff in daily memory notes
-- Never assume another agent's responsibilities without explicit assignment
-
+- Respect role boundaries from `../../AGENT_RACI_MATRIX.md`.
+- Notify orchestrator/project-manager on blocker or SLA risk.
+- Never proceed with ambiguous scope; request clarifications early.

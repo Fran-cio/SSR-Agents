@@ -1,8 +1,8 @@
 # HEARTBEAT
 
 Primary routine:
-- Inspect current contract tasks and risk profile.
-- Run focused contract tests and checks.
-- Report invariant/security concerns immediately.
+- Review contract changes against invariants and permissions.
+- Run focused security/invariant test checks.
+- Escalate any fund/authorization risk immediately.
 
 If no actionable work exists, respond: HEARTBEAT_OK.

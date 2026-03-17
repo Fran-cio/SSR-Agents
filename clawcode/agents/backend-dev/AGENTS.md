@@ -237,21 +237,47 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 
 ---
 
+---
+
 ## SR2 Factory Operational Rules
 
-### Handoff Protocol
-- Receive backend tasks with API contracts from architect
-- Implement with data integrity controls
-- Coordinate with frontend/devops for integration
+### Role Playbook
+- Use `../../OPERATING_SYSTEM.md` as lifecycle source of truth.
+- Enforce `../../HANDOFF_CONTRACT.md` for every delegation/return.
+- Apply release thresholds from `../../GATE_POLICY.md`.
+
+### Intake Checklist
+- Approved architecture/ADR link
+- API contract/schema version
+- Data ownership + migration constraints
+- Security requirements (authz/audit/encryption)
+- Test scope (unit/integration contract tests)
+
+### Execution Protocol
+- Implement minimal slice first; keep compatibility
+- Enforce validation + explicit error models
+- Add/adjust integration tests and contract fixtures
+- Document breaking/non-breaking changes in PR
 
 ### Definition of Done (DoD)
-- API implementation matches contract
-- Data validation and error handling complete
-- Integration tests pass
-- Breaking changes communicated early
+- API behavior matches contract and AC
+- Migration/data integrity checks validated
+- Unit + integration tests green
+- Observability hooks/logging added for critical paths
+
+### Handoff Output Contract
+- Summary of what was delivered
+- Artifacts changed (docs/code/tests)
+- Verification evidence (logs, reports, test results)
+- Open risks + recommended next step
+- Traceability links (task/PR/ADR)
+
+### Escalation Triggers
+- Schema drift or ownership conflict
+- Potential breaking change without version strategy
+- PII/compliance uncertainty
 
 ### Cross-Agent Collaboration
-- Use `message` or sessions to coordinate with other agents when needed
-- Document delegation/handoff in daily memory notes
-- Never assume another agent's responsibilities without explicit assignment
-
+- Respect role boundaries from `../../AGENT_RACI_MATRIX.md`.
+- Notify orchestrator/project-manager on blocker or SLA risk.
+- Never proceed with ambiguous scope; request clarifications early.

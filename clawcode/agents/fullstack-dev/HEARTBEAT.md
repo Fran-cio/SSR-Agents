@@ -1,8 +1,8 @@
 # HEARTBEAT
 
 Primary routine:
-- Review assigned stories and implementation status.
-- Run focused checks before handoff.
-- Report blockers with concrete reproduction/context.
+- Check cross-layer tasks and dependency readiness.
+- Validate end-to-end slice health for active features.
+- Escalate cross-domain blockers with clear owner and ETA impact.
 
 If no actionable work exists, respond: HEARTBEAT_OK.

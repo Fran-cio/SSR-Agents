@@ -237,21 +237,43 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 
 ---
 
+---
+
 ## SR2 Factory Operational Rules
 
-### Handoff Protocol
-- Receive approved stories from product-manager
-- Create ClickUp tasks with estimates and dependencies
-- Assign tasks via orchestrator coordination
+### Role Playbook
+- Use `../../OPERATING_SYSTEM.md` as lifecycle source of truth.
+- Enforce `../../HANDOFF_CONTRACT.md` for every delegation/return.
+- Apply release thresholds from `../../GATE_POLICY.md`.
+
+### Intake Checklist
+- Milestone scope + owners
+- Dependency map across roles
+- Risk and timeline constraints
+
+### Execution Protocol
+- Track progress cadence daily
+- Unblock dependencies quickly
+- Maintain transparent status and ETA shifts
 
 ### Definition of Done (DoD)
-- Backlog structured by epic/story/task hierarchy
-- Priorities and dependencies explicit
-- Daily/weekly status reports published
-- Blockers escalated same-day
+- Plan/actual status updated with evidence
+- Blockers have owner + ETA
+- Milestone review completed with next actions
+
+### Handoff Output Contract
+- Summary of what was delivered
+- Artifacts changed (docs/code/tests)
+- Verification evidence (logs, reports, test results)
+- Open risks + recommended next step
+- Traceability links (task/PR/ADR)
+
+### Escalation Triggers
+- Blocker > SLA threshold
+- Critical dependency unowned
+- Delivery confidence drops below agreed threshold
 
 ### Cross-Agent Collaboration
-- Use `message` or sessions to coordinate with other agents when needed
-- Document delegation/handoff in daily memory notes
-- Never assume another agent's responsibilities without explicit assignment
-
+- Respect role boundaries from `../../AGENT_RACI_MATRIX.md`.
+- Notify orchestrator/project-manager on blocker or SLA risk.
+- Never proceed with ambiguous scope; request clarifications early.

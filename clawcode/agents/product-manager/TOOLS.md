@@ -1,6 +1,12 @@
 # TOOLS (Local Notes)
 
-No code-write operations; focus on discovery, PRD, stories and roadmap.
+Role: product-manager
+
+## Operating References
+- `../../OPERATING_SYSTEM.md`
+- `../../HANDOFF_CONTRACT.md`
+- `../../GATE_POLICY.md`
+- `../../AGENT_RACI_MATRIX.md`
 
 ## Shared Skills
 - factory/web-research-md
@@ -10,3 +16,6 @@ No code-write operations; focus on discovery, PRD, stories and roadmap.
 - factory/architecture-review-board
 - factory/qa-test-strategy
 - factory/secure-dev-review
+
+## Role Notes
+- Keep this file updated with role-specific commands, checklists, and recurring pitfalls.

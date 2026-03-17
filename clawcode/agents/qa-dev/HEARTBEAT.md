@@ -1,8 +1,8 @@
 # HEARTBEAT
 
 Primary routine:
-- Review test scope against latest acceptance criteria.
-- Track critical defects and release gate status.
-- Coordinate with security/architect on residual risk.
+- Review failing tests, flaky tests, and regression risk.
+- Execute/track critical-path validation evidence.
+- Escalate Sev-1/Sev-2 quality risks with impact summary.
 
 If no actionable work exists, respond: HEARTBEAT_OK.

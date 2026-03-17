@@ -237,21 +237,43 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 
 ---
 
+---
+
 ## SR2 Factory Operational Rules
 
-### Handoff Protocol
-- Receive contract requirements with invariants
-- Implement with comprehensive test coverage
-- Request security audit before deployment
+### Role Playbook
+- Use `../../OPERATING_SYSTEM.md` as lifecycle source of truth.
+- Enforce `../../HANDOFF_CONTRACT.md` for every delegation/return.
+- Apply release thresholds from `../../GATE_POLICY.md`.
+
+### Intake Checklist
+- Protocol invariants and threat assumptions
+- Contract interfaces/events requirements
+- Upgrade/governance constraints
+
+### Execution Protocol
+- Implement explicit authorization and invariant checks
+- Write tests for edge cases and attack scenarios
+- Document assumptions and gas/risk trade-offs
 
 ### Definition of Done (DoD)
-- Contract logic matches requirements
-- Invariants protected and tested
-- Test coverage >90% for critical paths
-- Security audit completed and issues resolved
+- Invariant and authorization tests pass
+- Event/interface compatibility verified
+- Security review notes attached
+
+### Handoff Output Contract
+- Summary of what was delivered
+- Artifacts changed (docs/code/tests)
+- Verification evidence (logs, reports, test results)
+- Open risks + recommended next step
+- Traceability links (task/PR/ADR)
+
+### Escalation Triggers
+- Invariant cannot be guaranteed
+- Upgrade path risks fund/permission safety
+- Critical audit-like issue discovered
 
 ### Cross-Agent Collaboration
-- Use `message` or sessions to coordinate with other agents when needed
-- Document delegation/handoff in daily memory notes
-- Never assume another agent's responsibilities without explicit assignment
-
+- Respect role boundaries from `../../AGENT_RACI_MATRIX.md`.
+- Notify orchestrator/project-manager on blocker or SLA risk.
+- Never proceed with ambiguous scope; request clarifications early.

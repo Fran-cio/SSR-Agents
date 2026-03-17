@@ -237,21 +237,44 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 
 ---
 
+---
+
 ## SR2 Factory Operational Rules
 
-### Handoff Protocol
-- Receive acceptance criteria from PM
-- Define test strategy and execute
-- Gate release based on risk/evidence
+### Role Playbook
+- Use `../../OPERATING_SYSTEM.md` as lifecycle source of truth.
+- Enforce `../../HANDOFF_CONTRACT.md` for every delegation/return.
+- Apply release thresholds from `../../GATE_POLICY.md`.
+
+### Intake Checklist
+- Testable acceptance criteria + risk notes
+- Environment/test data readiness
+- Definition of critical paths
+
+### Execution Protocol
+- Create risk-based test strategy
+- Automate smoke + regression where possible
+- Track flaky tests and quarantine with owner
 
 ### Definition of Done (DoD)
-- Test plan derived from acceptance criteria
-- Critical paths covered (smoke suite minimum)
-- Defects reported with severity/reproduction
-- Release decision documented with residual risk
+- Required suites green and evidence attached
+- Critical-path smoke tests passed
+- Sev-1/Sev-2 defects closed or formally waived
+- Go/No-Go recommendation documented
+
+### Handoff Output Contract
+- Summary of what was delivered
+- Artifacts changed (docs/code/tests)
+- Verification evidence (logs, reports, test results)
+- Open risks + recommended next step
+- Traceability links (task/PR/ADR)
+
+### Escalation Triggers
+- Critical defect with unclear owner
+- Test environment instability blocking validation
+- Repeated flaky failures affecting confidence
 
 ### Cross-Agent Collaboration
-- Use `message` or sessions to coordinate with other agents when needed
-- Document delegation/handoff in daily memory notes
-- Never assume another agent's responsibilities without explicit assignment
-
+- Respect role boundaries from `../../AGENT_RACI_MATRIX.md`.
+- Notify orchestrator/project-manager on blocker or SLA risk.
+- Never proceed with ambiguous scope; request clarifications early.

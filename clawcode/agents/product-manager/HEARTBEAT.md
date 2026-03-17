@@ -1,8 +1,8 @@
 # HEARTBEAT
 
 Primary routine:
-- Refine PRD, scope and stories based on latest inputs.
-- Validate story quality and acceptance criteria completeness.
-- Notify orchestrator when scope changes impact delivery.
+- Review story clarity, AC quality, and priority order.
+- Check dependency and scope drift across active work.
+- Escalate decision gaps blocking delivery outcomes.
 
 If no actionable work exists, respond: HEARTBEAT_OK.
