@@ -1,8 +1,14 @@
+- clawcode/AGENT_RACI_MATRIX.md
 - clawcode/AGENT_RELATIONSHIPS.md
 - clawcode/FACTORY_OPTIMIZATION_PLAN.md
+- clawcode/GATE_POLICY.md
+- clawcode/HANDOFF_CONTRACT.md
 - clawcode/HANDOFF_TEMPLATES.md
+- clawcode/OPERATING_SYSTEM.md
 - clawcode/RELEASE_GATES.md
+- clawcode/SKILLS_CURATION.md
 - clawcode/SKILLS_CURATION_SKILLS_SH.md
+- clawcode/TEAM_LAUNCH_PLAN.md
 - clawcode/agents/backend-dev/AGENTS.md
 - clawcode/agents/backend-dev/HEARTBEAT.md
 - clawcode/agents/backend-dev/IDENTITY.md

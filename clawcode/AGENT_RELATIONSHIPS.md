@@ -77,16 +77,24 @@ This document maps all current agents and how they interact in the SR2 factory m
 
 ---
 
+## Delivery Lifecycle & Gates
+
+- Discovery → Architecture → Implementation → Security/QA → Release → Post-release
+- Full gate model and SLA details: `OPERATING_SYSTEM.md`
+- Quality/Security thresholds and exceptions: `GATE_POLICY.md`
+
 ## Delegation/Handoff Rules (Practical)
 
-When orchestrator delegates, each handoff should include:
+When orchestrator delegates, use the mandatory schema in `HANDOFF_CONTRACT.md`.
+
+Minimum required fields:
 - objective
-- scope boundaries
+- scope / out-of-scope
 - acceptance criteria
 - dependencies and deadlines
-- expected output format (docs/code/tests/evidence)
+- required artifacts and traceability links
 
-When specialist returns, it must include:
+When specialist returns, include:
 - result summary
 - changed artifacts
 - risks/open questions
