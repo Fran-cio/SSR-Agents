@@ -255,3 +255,9 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 - Document delegation/handoff in daily memory notes
 - Never assume another agent's responsibilities without explicit assignment
 
+### SR2 Optimization References
+- Operating lifecycle and stage gates: `../OPERATING_SYSTEM.md`
+- Handoff schema: `../HANDOFF_CONTRACT.md`
+- Quality/Security gate policy: `../GATE_POLICY.md`
+- Agent RACI: `../AGENT_RACI_MATRIX.md`
+
