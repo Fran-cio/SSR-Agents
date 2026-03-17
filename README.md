@@ -6,7 +6,9 @@ Snapshot repository for current ClawCode/OpenClaw configuration.
 - Workspace root markdown/config files (`clawcode/workspace-root/`)
 - Full multi-agent definitions (`clawcode/agents/<role>/`)
 - Agent relationship map (`clawcode/AGENT_RELATIONSHIPS.md`)
-- Installed skill folders and their assets (`clawcode/skills/`)
+- Optimization playbooks and gates (`clawcode/FACTORY_OPTIMIZATION_PLAN.md`, `clawcode/HANDOFF_TEMPLATES.md`, `clawcode/RELEASE_GATES.md`)
+- Installed and curated external skills (`clawcode/skills/`)
+- skills.sh curation notes (`clawcode/SKILLS_CURATION_SKILLS_SH.md`)
 - File inventory (`INVENTORY.md`)
 
 ## Source

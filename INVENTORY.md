@@ -1,4 +1,8 @@
 - clawcode/AGENT_RELATIONSHIPS.md
+- clawcode/FACTORY_OPTIMIZATION_PLAN.md
+- clawcode/HANDOFF_TEMPLATES.md
+- clawcode/RELEASE_GATES.md
+- clawcode/SKILLS_CURATION_SKILLS_SH.md
 - clawcode/agents/backend-dev/AGENTS.md
 - clawcode/agents/backend-dev/HEARTBEAT.md
 - clawcode/agents/backend-dev/IDENTITY.md
@@ -72,6 +76,16 @@
 - clawcode/agents/uxui-dev/TOOLS.md
 - clawcode/agents/uxui-dev/USER.md
 - clawcode/skills/clawhub/SKILL.md
+- clawcode/skills/external/microsoft/analyze-test-run.SKILL.md
+- clawcode/skills/external/microsoft/file-test-bug.SKILL.md
+- clawcode/skills/external/microsoft/markdown-token-optimizer.SKILL.md
+- clawcode/skills/external/microsoft/skill-authoring.SKILL.md
+- clawcode/skills/external/skills-sh/agent-browser.SKILL.md
+- clawcode/skills/external/skills-sh/ai-rag-pipeline.SKILL.md
+- clawcode/skills/external/skills-sh/javascript-sdk.SKILL.md
+- clawcode/skills/external/skills-sh/python-executor.SKILL.md
+- clawcode/skills/external/skills-sh/python-sdk.SKILL.md
+- clawcode/skills/external/skills-sh/web-search.SKILL.md
 - clawcode/skills/healthcheck/SKILL.md
 - clawcode/skills/openai-image-gen/SKILL.md
 - clawcode/skills/openai-image-gen/scripts/gen.py
